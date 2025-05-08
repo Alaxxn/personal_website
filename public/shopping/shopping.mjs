@@ -104,7 +104,9 @@ function rerenderCart() {
 
     for (let product of PRODUCTS) {
         console.log(product);
+        if (product.numInCart > 0){
         document.querySelector(".cart-items").append(renderCart(product));
+        }
     }
     
 }
@@ -112,6 +114,7 @@ rerenderCart();
 
 const minPriceInput = document.querySelector("#minPrice");
 const maxPriceInput = document.querySelector("#maxPrice");
+
 /**
  * Returns whether a product should be visible based on the current values of the price filters.
  *
