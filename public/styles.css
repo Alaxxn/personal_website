@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+@media screen and (max-width: 700px) {
+    .left{
+        flex-direction: column;
+    }
+    .visible-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .menu-button {
+        background-color: var(--color-link);
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+    }
+    .hidden-nav{
+        display: none !important;
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+    .menu-button{
+        display:none;       
+    }
+}
+
+.dark-mode{
+    --color-dark-red: #5e9d34;          
+    --color-dark-baige: #1e1e1e;         
+    --color-light-baige: #2b2b2b;       
+    --color-primary-purple: #46577b;    
+    --color-text: rgb(255, 255, 255);
+    --color-link: #4dd0e1; 
+
+    --color-background: var(--color-dark-baige);     
+    --color-section: var(--color-light-baige);      
+    --color-section-dark: var(--color-primary-purple); 
+
+}
+      
+
+.left{
+    display: flex;
+    min-width: max-content;
+    align-items: center;
+    gap : 1rem;
+}
+
+.right{
+    align-self: center;
+    min-width: max-content;
+}
+
+body{
+    background-color: var(--color-background);
+    font-size: 1em;
+    font-family: "Habibi", sans-serif;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    color: var(--color-text) 
+}
+
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--color-section-dark);
+    gap: 1rem;
+}
+
+.visible-nav, .hidden-nav{
+    display: flex;
+    background-color: var(--color-section-dark);
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0rem;
+    min-width: max-content;
+}
+
+
+h1,h2,h3{
+    font-family: "Young Serif", sans-serif;
+    padding: 1rem 0rem;
+}
+
+a{
+    color: var(--color-link);
+    font-size: 1rem;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+a:hover{
+    color:blue;
+}
+
+header{
+    padding: 1rem;
+}
+
+section{
+    background-color: var(--color-section);
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+
+dl {
+    display: grid;
+    grid-template-columns: 4rem 15rem;
+    gap: 2rem;
+    background-color: var(--color-section);
+    border-radius: 10px;
+    column-gap: 0rem;
+    align-items: baseline;
+    padding: 0.5rem;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+}
+
+ol{
+    padding: 1rem;
+}
+
+.info{
+    display: flex;
+    gap: 2rem;
+}

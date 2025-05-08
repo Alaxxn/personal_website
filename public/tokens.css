@@ -1,0 +1,12 @@
+:root {
+    --color-dark-red:  #790c2b;
+    --color-dark-baige:  #BCAF9C;
+    --color-light-baige:  #CBBEB3;
+    --color-primary-purple:  #69626D;
+
+    --color-background: var(--color-dark-baige);
+    --color-link: var(--color-dark-red);
+    --color-section: var(--color-light-baige);
+    --color-section-dark: var(--color-primary-purple);
+
+}
