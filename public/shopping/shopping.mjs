@@ -76,6 +76,7 @@ function rerenderAllProducts() {
     }
     for (let product of PRODUCTS) {
         document.querySelector(".product-list").append(renderProductCard(product));
+
     }
 }
 
@@ -105,12 +106,16 @@ function rerenderCart() {
     for (let product of PRODUCTS) {
         console.log(product);
         if (product.numInCart > 0){
+        new_item = renderCart(product)
+        new_item.
         document.querySelector(".cart-items").append(renderCart(product));
         }
     }
     
 }
 rerenderCart();
+
+
 
 const minPriceInput = document.querySelector("#minPrice");
 const maxPriceInput = document.querySelector("#maxPrice");
@@ -123,4 +128,8 @@ const maxPriceInput = document.querySelector("#maxPrice");
  */
 function shouldProductBeVisible(product) {
 
+}
+
+function updateCart(){
+    console.log("adding to cart");
 }
